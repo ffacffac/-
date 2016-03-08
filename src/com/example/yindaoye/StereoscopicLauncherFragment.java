@@ -15,7 +15,7 @@ import android.view.animation.ScaleAnimation;
 import android.widget.ImageView;
 
 /**
- * 最后一个
+ * 最后一个，，，，
  * 
  * @author apple
  */
