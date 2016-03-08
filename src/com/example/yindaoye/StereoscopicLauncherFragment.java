@@ -87,7 +87,7 @@ public class StereoscopicLauncherFragment extends LauncherBaseFragment implement
      */
     private void goneOrVis()
     {
-	Animation ani = new AlphaAnimation(0.2f, 1f);
+	Animation ani = new AlphaAnimation(0.2f, 1f);//Õ∏√˜∂»…Ë÷√
 	ani.setDuration(1500);
 	ani.setRepeatMode(Animation.REVERSE);
 	ani.setRepeatCount(Animation.INFINITE);
