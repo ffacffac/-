@@ -82,6 +82,18 @@ public class StereoscopicLauncherFragment extends LauncherBaseFragment implement
 	imgView_immediate_experience.startAnimation(animationSet);
     }
 
+    /**
+     * 一直在闪烁的动画
+     */
+    private void goneOrVis()
+    {
+	Animation ani = new AlphaAnimation(0.2f, 1f);
+	ani.setDuration(1500);
+	ani.setRepeatMode(Animation.REVERSE);
+	ani.setRepeatCount(Animation.INFINITE);
+	imgView_immediate_experience.startAnimation(ani);
+    }
+
     @Override
     public void onClick(View v)
     {
@@ -94,7 +106,8 @@ public class StereoscopicLauncherFragment extends LauncherBaseFragment implement
     @Override
     public void startAnimation()
     {
-	playHeartbeatAnimation();
+	// playHeartbeatAnimation();
+	goneOrVis();
     }
 
     @Override
